@@ -1,0 +1,26 @@
+ohtu/verkkokauppa/Tuote.java
+ ohtu.verkkokauppa.Tuote
+ohtu/verkkokauppa/PankkiRP.java
+ ohtu.verkkokauppa.PankkiRP
+ohtu/verkkokauppa/Ostoskori.java
+ ohtu.verkkokauppa.Ostoskori
+ohtu/Main.java
+ ohtu.Main
+ohtu/verkkokauppa/Viitegeneraattori.java
+ ohtu.verkkokauppa.Viitegeneraattori
+ohtu/AppConfig.java
+ ohtu.AppConfig
+ohtu/verkkokauppa/Kauppa.java
+ ohtu.verkkokauppa.Kauppa
+ohtu/verkkokauppa/ViitegeneraattoriRP.java
+ ohtu.verkkokauppa.ViitegeneraattoriRP
+ohtu/verkkokauppa/Kirjanpito.java
+ ohtu.verkkokauppa.Kirjanpito
+ohtu/verkkokauppa/Varasto.java
+ ohtu.verkkokauppa.Varasto
+ohtu/verkkokauppa/KirjanpitoRP.java
+ ohtu.verkkokauppa.KirjanpitoRP
+ohtu/verkkokauppa/Pankki.java
+ ohtu.verkkokauppa.Pankki
+ohtu/verkkokauppa/VarastoRP.java
+ ohtu.verkkokauppa.VarastoRP
