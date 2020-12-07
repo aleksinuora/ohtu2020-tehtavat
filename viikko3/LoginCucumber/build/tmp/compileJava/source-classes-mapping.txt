@@ -1,0 +1,16 @@
+ohtu/io/StubIO.java
+ ohtu.io.StubIO
+ohtu/data_access/UserDao.java
+ ohtu.data_access.UserDao
+ohtu/domain/User.java
+ ohtu.domain.User
+ohtu/App.java
+ ohtu.App
+ohtu/io/IO.java
+ ohtu.io.IO
+ohtu/data_access/InMemoryUserDao.java
+ ohtu.data_access.InMemoryUserDao
+ohtu/io/ConsoleIO.java
+ ohtu.io.ConsoleIO
+ohtu/services/AuthenticationService.java
+ ohtu.services.AuthenticationService

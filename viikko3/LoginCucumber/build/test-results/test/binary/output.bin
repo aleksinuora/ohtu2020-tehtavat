@@ -1,0 +1,52 @@
+
+lScenario: user can login with correct password           [90m# src/test/resources/ohtu/login.feature:3[0m
+{  [32mGiven [0m[32mcommand login is selected[0m                        [90m# ohtu.Stepdefs.commandLoginSelected()[0m
+—  [32mWhen [0m[32musername [0m[32m[1m"pekka"[0m[32m and password [0m[32m[1m"akkep"[0m[32m are entered[0m [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+ô  [32mThen [0m[32msystem will respond with [0m[32m[1m"logged in"[0m              [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
+
+pScenario: user can not login with incorrect password         [90m# src/test/resources/ohtu/login.feature:8[0m
+  [32mGiven [0m[32mcommand login is selected[0m                            [90m# ohtu.Stepdefs.commandLoginSelected()[0m
+’  [32mWhen [0m[32musername [0m[32m[1m"pekka"[0m[32m and password [0m[32m[1m"wrong"[0m[32m are entered[0m     [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+ù  [32mThen [0m[32msystem will respond with [0m[32m[1m"wrong username or password"[0m [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
+
+qScenario: nonexistent user can not login to                  [90m# src/test/resources/ohtu/login.feature:14[0m
+  [32mGiven [0m[32mcommand login is selected[0m                            [90m# ohtu.Stepdefs.commandLoginSelected()[0m
+’  [32mWhen [0m[32musername [0m[32m[1m"kalle"[0m[32m and password [0m[32m[1m"akkep"[0m[32m are entered[0m     [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+ù  [32mThen [0m[32msystem will respond with [0m[32m[1m"wrong username or password"[0m [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
+
+xScenario: creation is successful with valid username and password [90m# src/test/resources/ohtu/new_user.feature:3[0m
+Ç  [32mGiven [0m[32mcommand new is selected[0m                                   [90m# ohtu.Stepdefs.commandNewSelected()[0m
+⁄  [32mWhen [0m[32musername [0m[32m[1m"asd"[0m[32m and password [0m[32m[1m"12345678"[0m[32m are entered[0m         [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+¢  [32mThen [0m[32msystem will respond with [0m[32m[1m"new user registered"[0m             [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
+
+~Scenario: creation fails with already taken username and valid password [90m# src/test/resources/ohtu/new_user.feature:8[0m
+à  [32mGiven [0m[32mcommand new is selected[0m                                         [90m# ohtu.Stepdefs.commandNewSelected()[0m
+‡  [32mWhen [0m[32musername [0m[32m[1m"asd"[0m[32m and password [0m[32m[1m"12345678"[0m[32m are entered[0m               [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+‡  [32mAnd [0m[32musername [0m[32m[1m"asd"[0m[32m and password [0m[32m[1m"12345678"[0m[32m are entered[0m                [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+®  [32mThen [0m[32msystem will respond with [0m[32m[1m"new user not registered"[0m               [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
+
+{Scenario: creation fails with too short username and valid password [90m# src/test/resources/ohtu/new_user.feature:14[0m
+Ñ  [32mGiven [0m[32mcommand new is selected[0m                                     [90m# ohtu.Stepdefs.commandNewSelected()[0m
+‹  [32mWhen [0m[32musername [0m[32m[1m"as"[0m[32m and password [0m[32m[1m"12345678"[0m[32m are entered[0m            [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+§  [32mThen [0m[32msystem will respond with [0m[32m[1m"new user not registered"[0m           [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
+	
+	{Scenario: creation fails with valid username and too short password [90m# src/test/resources/ohtu/new_user.feature:19[0m
+	Ñ  [32mGiven [0m[32mcommand new is selected[0m                                     [90m# ohtu.Stepdefs.commandNewSelected()[0m
+	‹  [32mWhen [0m[32musername [0m[32m[1m"asd"[0m[32m and password [0m[32m[1m"123"[0m[32m are entered[0m                [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+	§  [32mThen [0m[32msystem will respond with [0m[32m[1m"new user not registered"[0m           [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
+
+
+
+úScenario: creation fails with valid username and password long enough but consisting of only letters [90m# src/test/resources/ohtu/new_user.feature:24[0m
+
+•  [32mGiven [0m[32mcommand new is selected[0m                                                                      [90m# ohtu.Stepdefs.commandNewSelected()[0m
+
+˝  [32mWhen [0m[32musername [0m[32m[1m"asd"[0m[32m and password [0m[32m[1m"asdfghjkl"[0m[32m are entered[0m                                           [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+
+≈  [32mThen [0m[32msystem will respond with [0m[32m[1m"new user not registered"[0m                                            [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
+
+sScenario: can login with successfully generated account     [90m# src/test/resources/ohtu/new_user.feature:29[0m
+–  [32mGiven [0m[32muser [0m[32m[1m"eero"[0m[32m with password [0m[32m[1m"salainen1"[0m[32m is created[0m    [90m# ohtu.Stepdefs.userWithPasswordIsCreated(java.lang.String,java.lang.String)[0m
+~  [32mAnd [0m[32mcommand login is selected[0m                             [90m# ohtu.Stepdefs.commandLoginSelected()[0m
+‘  [32mWhen [0m[32musername [0m[32m[1m"eero"[0m[32m and password [0m[32m[1m"salainen1"[0m[32m are entered[0m [90m# ohtu.Stepdefs.usernameAndPasswordAreEntered(java.lang.String,java.lang.String)[0m
+ú  [32mThen [0m[32msystem will respond with [0m[32m[1m"logged in"[0m                 [90m# ohtu.Stepdefs.systemWillRespondWith(java.lang.String)[0m
