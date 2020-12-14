@@ -1,0 +1,20 @@
+ohtu/kivipaperisakset/domain/TekoalyParannettu.java
+ ohtu.kivipaperisakset.domain.TekoalyParannettu
+ohtu/kivipaperisakset/logiikka/KPSTekoaly.java
+ ohtu.kivipaperisakset.logiikka.KPSTekoaly
+ohtu/kivipaperisakset/domain/Tuomari.java
+ ohtu.kivipaperisakset.domain.Tuomari
+ohtu/kivipaperisakset/logiikka/KPSParempiTekoaly.java
+ ohtu.kivipaperisakset.logiikka.KPSParempiTekoaly
+ohtu/kivipaperisakset/logiikka/KiviPaperiSaksetAbs.java
+ ohtu.kivipaperisakset.logiikka.KiviPaperiSaksetAbs
+ohtu/kivipaperisakset/logiikka/KPSPelaajaVsPelaaja.java
+ ohtu.kivipaperisakset.logiikka.KPSPelaajaVsPelaaja
+ohtu/kivipaperisakset/domain/Tekoaly.java
+ ohtu.kivipaperisakset.domain.Tekoaly
+ohtu/kivipaperisakset/logiikka/Pelitehdas.java
+ ohtu.kivipaperisakset.logiikka.Pelitehdas
+ohtu/kivipaperisakset/Paaohjelma.java
+ ohtu.kivipaperisakset.Paaohjelma
+ohtu/kivipaperisakset/ui/UI.java
+ ohtu.kivipaperisakset.ui.UI
